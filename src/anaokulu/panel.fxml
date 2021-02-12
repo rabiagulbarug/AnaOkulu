@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="pnl_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="676.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab fx:id="tab_yonetici" text="Yönetici Paneli">
+      <content>
+        <AnchorPane fx:id="pan_yonetici" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btn_ogretmen_yonetim" layoutX="61.0" layoutY="175.0" mnemonicParsing="false" onAction="#Tiklandi_OgretmenYonetim" prefHeight="50.0" prefWidth="125.0" text="Öğretmen Yönetim" AnchorPane.leftAnchor="61.0" AnchorPane.topAnchor="175.0" />
+                  <Button fx:id="btn_veli_yonetim" layoutX="61.0" layoutY="295.0" mnemonicParsing="false" onAction="#Tiklandi_Veli_Yonetim" prefHeight="50.0" prefWidth="125.0" text="Veli Yönetim" AnchorPane.leftAnchor="61.0" AnchorPane.topAnchor="295.0" />
+                  <Button fx:id="btn_ogrenci_yonetim" layoutX="61.0" layoutY="235.0" mnemonicParsing="false" onAction="#Tiklandi_OgrenciYonetim" prefHeight="50.0" prefWidth="125.0" text="Öğrenci Yönetim" AnchorPane.leftAnchor="61.0" AnchorPane.topAnchor="235.0" />
+                  <Button fx:id="btn_ders_programi" layoutX="61.0" layoutY="55.0" mnemonicParsing="false" onAction="#Tiklandi_Ders_Programi" prefHeight="50.0" prefWidth="125.0" text="Ders Program Kaydı" AnchorPane.leftAnchor="61.0" AnchorPane.topAnchor="55.0" />
+                  <TableView fx:id="table_veli2" layoutX="312.0" layoutY="37.0" prefHeight="325.0" prefWidth="341.0" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="37.0">
+                    <columns>
+                        <TableColumn fx:id="kln_veliID" prefWidth="65.0" text="VeliID" />
+                      <TableColumn fx:id="kln_veli" prefWidth="150.0" text="Veli İsim Soyisim" />
+                        <TableColumn fx:id="kln_veli_telefonno" prefWidth="125.0" text="Telefon Numara" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btn_odeme_kontrol" layoutX="61.0" layoutY="115.0" mnemonicParsing="false" onAction="#Tiklandi_OdemeKontrol" prefHeight="50.0" prefWidth="125.0" text="Ödeme Kontrol" AnchorPane.leftAnchor="61.0" AnchorPane.topAnchor="115.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="tab_yoneticibilgi" text="Yonetici Bilgi">
+         <content>
+            <AnchorPane fx:id="pan_yoneticibilgi" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="txt_yadres" layoutX="201.0" layoutY="278.0" prefHeight="101.0" prefWidth="154.0" AnchorPane.leftAnchor="201.0" />
+                  <TextField fx:id="txt_ytelefon" layoutX="201.0" layoutY="237.0" AnchorPane.leftAnchor="201.0" />
+                  <TextField fx:id="txt_ymail" layoutX="201.0" layoutY="197.0" AnchorPane.leftAnchor="201.0" />
+                  <TextField fx:id="txt_ysifre" layoutX="201.0" layoutY="157.0" AnchorPane.leftAnchor="201.0" />
+                  <TextField fx:id="txt_yisim" layoutX="201.0" layoutY="117.0" AnchorPane.leftAnchor="201.0" />
+                  <TextField fx:id="txt_yId" layoutX="201.0" layoutY="77.0" AnchorPane.leftAnchor="201.0" />
+                  <Button fx:id="btn_yonetici_kaydet" layoutX="427.0" layoutY="104.0" mnemonicParsing="false" onAction="#Tiklandi_Yonetici_Kaydet" prefHeight="45.0" prefWidth="72.0" text="KAYDET" />
+                  <Label layoutX="58.0" layoutY="26.0" text="YÖNETİCİ BİLGİLERİ " textFill="#ab1010">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="278.0" text="Adres : " AnchorPane.leftAnchor="89.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="237.0" text="Telefon : " AnchorPane.leftAnchor="89.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="157.0" text="Şifre  : " AnchorPane.leftAnchor="91.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="197.0" text="Mail  : " AnchorPane.leftAnchor="91.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="74.0" text="Yönetici ID : " AnchorPane.leftAnchor="91.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="117.0" text="İsim Soyisim : " AnchorPane.leftAnchor="91.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_yonetici_guncelle" layoutX="427.0" layoutY="181.0" mnemonicParsing="false" onAction="#Tiklandi_Yonetici_Guncelle" prefHeight="52.0" prefWidth="73.0" text="GÜNCELLE" />
+                  <Label fx:id="lblStatus1" layoutX="265.0" layoutY="16.0" text="YÖNETİCİ KAYDI YAPARKEN YÖNETİCİ ID GİRMEYİNİZ." AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tab_yemek" text="Yemek Kontrol">
+        <content>
+          <AnchorPane fx:id="pan_yemek" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tab_yemeklistesi" layoutX="288.0" layoutY="40.0" prefHeight="342.0" prefWidth="300.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="50.0">
+                    <columns>
+                      <TableColumn fx:id="kln_gunler" prefWidth="150.0" text="Günler" />
+                      <TableColumn fx:id="kln_yemek" prefWidth="150.0" text="Yemek" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="27.0" layoutY="14.0" text="YEMEK LİSTESİ">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_yemek" layoutX="50.0" layoutY="297.0" mnemonicParsing="false" onAction="#Tiklandi_Yemek" prefHeight="50.0" prefWidth="80.0" text="KAYDET" />
+                  <TextField fx:id="txt_yiyecek" layoutX="28.0" layoutY="153.0" prefHeight="25.0" prefWidth="206.0" promptText="Yemek İsmi Giriniz.." />
+                  <TextField fx:id="txt_gun" layoutX="27.0" layoutY="82.0" prefHeight="25.0" prefWidth="208.0" promptText="Gün İsmi Giriniz.." />
+                  <Button fx:id="btn_sil" layoutX="175.0" layoutY="229.0" mnemonicParsing="false" onAction="#Tiklandi_Yemek_Sil" prefHeight="50.0" prefWidth="80.0" text="SİL" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+    <Tab fx:id="tab_ogretmen" text="Öğretmen Paneli">
+      <content>
+        <AnchorPane fx:id="pan_ogretmen" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btn_ders_takip" layoutX="58.0" layoutY="62.0" mnemonicParsing="false" onAction="#Tiklandi_DersTakip" prefHeight="50.0" prefWidth="120.0" text="Ders Takip" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="75.0" />
+                  <Button fx:id="btn_ogrenci_bilgi" layoutX="40.0" layoutY="183.0" mnemonicParsing="false" onAction="#Tiklandi_OgrenciBilgi" prefHeight="50.0" prefWidth="120.0" text="Öğrenci Bilgisi" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="183.0" />
+                  <TextArea fx:id="text_not" layoutX="206.0" layoutY="59.0" prefHeight="271.0" prefWidth="396.0" />
+                  <Text layoutX="206.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOT DEFTERİ :" wrappingWidth="96.669921875">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="tab_ogretmenbilgi" text="Öğretmen Bilgi">
+         <content>
+            <AnchorPane fx:id="pan_ogretmen1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="676.0">
+               <children>
+                  <TextField fx:id="txt_ogretmen_isim" layoutX="175.0" layoutY="120.0" AnchorPane.leftAnchor="175.0" />
+                  <Text layoutX="62.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖĞRETMEN BİLGİ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İSİM SOYİSİM :" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="122.892578125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAİL : " AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="213.892578125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFON : " AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="183.892578125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="183.892578125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_ogretmen_tel" layoutX="175.0" layoutY="182.0" AnchorPane.leftAnchor="175.0" />
+                  <TextField fx:id="txt_ogretmen_mail" layoutX="175.0" layoutY="212.0" AnchorPane.leftAnchor="175.0" />
+                  <Text layoutX="65.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADRES : " AnchorPane.leftAnchor="65.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="txt_ogretmen_adres" layoutX="175.0" layoutY="249.0" prefHeight="109.0" prefWidth="200.0" AnchorPane.leftAnchor="175.0" />
+                  <Text layoutX="65.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖĞRETMEN ID :" AnchorPane.leftAnchor="65.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_ogretmenId" layoutX="175.0" layoutY="87.0" AnchorPane.leftAnchor="175.0" />
+                  <TextField fx:id="txt_ogretmen_sifre" layoutX="175.0" layoutY="151.0" AnchorPane.leftAnchor="175.0" />
+                  <Text layoutX="65.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE" AnchorPane.leftAnchor="65.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_ogretmen_guncelle" layoutX="415.0" layoutY="108.0" mnemonicParsing="false" onAction="#Tiklandi_Ogretmen_Guncelle" prefHeight="50.0" prefWidth="75.0" text="GÜNCELLE" />
+                  <Label fx:id="lblStatus2" layoutX="474.0" layoutY="4.0" prefHeight="20.0" prefWidth="198.0" text="Lütfen ID değiştirmeyiniz..." AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tab_veli" text="Veli Paneli">
+         <content>
+            <AnchorPane fx:id="pan_veli" minHeight="0.0" minWidth="0.0" prefHeight="399.0" prefWidth="607.0">
+               <children>
+                  <TableView fx:id="table_ders1" layoutX="81.0" layoutY="101.0" prefHeight="284.0" prefWidth="461.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+                     <columns>
+                        <TableColumn fx:id="kln_saat" prefWidth="100.0" text="Saat" />
+                        <TableColumn fx:id="kln_pazartesi" prefWidth="110.0" text="Pazartesi" />
+                        <TableColumn fx:id="kln_sali" prefWidth="110.0" text="Sali" />
+                        <TableColumn fx:id="kln_carsamba" prefWidth="110.0" text="Carsamba" />
+                        <TableColumn fx:id="kln_persembe" prefWidth="110.0" text="Persembe" />
+                        <TableColumn fx:id="kln_cuma" prefWidth="110.0" text="Cuma" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ders Programı ">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_yemek_listesi" layoutX="542.0" layoutY="31.0" mnemonicParsing="false" onAction="#Tiklandi_YemekListesi" prefHeight="60.0" prefWidth="120.0" text="Yemek Listesi" AnchorPane.leftAnchor="542.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tab_velibilgi" text="Veli Bilgi">
+         <content>
+            <AnchorPane fx:id="pan_veli_bilgi" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="677.0">
+               <children>
+                  <TextField fx:id="txt_veli_isim" layoutX="165.0" layoutY="99.0" AnchorPane.topAnchor="96.0" />
+                  <Text layoutX="143.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VELİ BİLGİ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="44.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İSİM SOYİSİM :" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="98.892578125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="50.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAİL : " AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="220.892578125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="50.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFON : " AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="160.892578125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="50.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="163.892578125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_veli_tel" layoutX="165.0" layoutY="158.0" AnchorPane.topAnchor="158.0" />
+                  <TextField fx:id="txt_veli_mail" layoutX="164.0" layoutY="218.0" AnchorPane.topAnchor="218.0" />
+                  <Text layoutX="50.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADRES : " AnchorPane.leftAnchor="50.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="txt_veli_adres" layoutX="165.0" layoutY="259.0" prefHeight="109.0" prefWidth="200.0" />
+                  <Text layoutX="46.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VELİ ID :" AnchorPane.leftAnchor="50.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_veliId" layoutX="164.0" layoutY="66.0" AnchorPane.topAnchor="66.0" />
+                  <Text layoutX="50.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFON 2 : " AnchorPane.leftAnchor="50.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_veli_tel2" layoutX="164.0" layoutY="188.0" AnchorPane.topAnchor="188.0" />
+                  <Text layoutX="50.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_veli_sifre" layoutX="164.0" layoutY="130.0" AnchorPane.topAnchor="127.0" />
+                  <Button fx:id="btn_veli_guncelle" layoutX="423.0" layoutY="176.0" mnemonicParsing="false" onAction="#Tiklandi_veli_guncelle" prefHeight="51.0" prefWidth="101.0" text="GÜNCELLE" />
+                  <Label fx:id="lblStatus" layoutX="341.0" layoutY="7.0" prefHeight="24.0" prefWidth="229.0" text="Lütfen ID değiştirmeyiniz..." AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tab_odemebilgi" text="Ödeme Bilgi">
+        <content>
+          <AnchorPane fx:id="pan_odeme" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btn_odeme_kaydet" layoutX="448.0" layoutY="190.0" mnemonicParsing="false" onAction="#Tiklandi_Odeme_Kaydet" prefHeight="76.0" prefWidth="102.0" text="KAYDET" />
+                  <TextField fx:id="txt_veliId1" layoutX="240.0" layoutY="98.0" />
+                  <Text layoutX="227.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VELİ ID" wrappingWidth="84.6796875" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#7c0b62" layoutX="227.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖDEME BİLGİ" AnchorPane.topAnchor="50.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_kalanmiktar" layoutX="240.0" layoutY="238.0" />
+                  <Text layoutX="91.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KALAN MİKTAR" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="240.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_odenenmiktar" layoutX="240.0" layoutY="203.0" />
+                  <Text layoutX="91.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖDENEN MİKTAR" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="205.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_aysayisi" layoutX="240.0" layoutY="165.0" AnchorPane.topAnchor="170.0" />
+                  <Text layoutX="96.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖDENEN AY " AnchorPane.leftAnchor="96.0" AnchorPane.topAnchor="170.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txt_toplamtutar" layoutX="240.0" layoutY="137.0" />
+                  <Text layoutX="98.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOPLAM TUTAR" AnchorPane.leftAnchor="98.0" AnchorPane.topAnchor="135.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

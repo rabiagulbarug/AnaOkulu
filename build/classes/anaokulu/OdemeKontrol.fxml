@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pan_odeme_kontol" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomasyon.OdemeKontrolController">
+   <children>
+      <Button fx:id="btn_odeme_guncelle" layoutX="352.0" layoutY="72.0" mnemonicParsing="false" onAction="#Tiklandi_Odeme_Guncelle" prefHeight="57.0" prefWidth="74.0" text="KAYDET" />
+      <TextField fx:id="txt_kalanmiktar" layoutX="173.0" layoutY="201.0" />
+      <Text layoutX="38.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KALAN MİKTAR :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_odenenmiktar" layoutX="173.0" layoutY="169.0" />
+      <TableView fx:id="tab_odemebilgi" layoutX="2.0" layoutY="201.0" prefHeight="307.0" prefWidth="484.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="kln_veliID" text="VeliID" />
+            <TableColumn fx:id="kln_toplamtutar" prefWidth="100.0" text="ToplamTutar" />
+            <TableColumn fx:id="kln_aysayisi" prefWidth="100.0" text="Ödenen Ay" />
+            <TableColumn fx:id="kln_odenenmiktar" prefWidth="100.0" text="OdenenMiktar" />
+            <TableColumn fx:id="kln_kalanmiktar" prefWidth="100.0" text="KalanMiktar" />
+         </columns>
+      </TableView>
+      <Text layoutX="35.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖDENEN MİKTAR :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_aysayisi" layoutX="173.0" layoutY="139.0" />
+      <Text layoutX="35.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖDENEN AY  :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_toplamtutar" layoutX="173.0" layoutY="109.0" />
+      <Text layoutX="35.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" TOPLAM TUTAR :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_odemekontrol" layoutX="173.0" layoutY="75.0" />
+      <Text layoutX="67.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VELİ ID  :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label layoutX="106.0" layoutY="23.0" text="ÖDEME KONTROL">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

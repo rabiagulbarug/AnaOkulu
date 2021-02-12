@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 Ara 2020, 15:07:01
+    Author     : Secret
+*/
+
+#btn_giris{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+    
+}
+#anc_pane{
+    
+     -fx-background-color:darkgray;
+}

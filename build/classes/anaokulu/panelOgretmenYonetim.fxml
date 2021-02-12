@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pan_ogretmen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomasyon.PanelOgretmenYonetimController">
+   <children>
+      <TextField fx:id="txt_ogretmen_isim" layoutX="165.0" layoutY="99.0" AnchorPane.leftAnchor="160.0" />
+      <Text layoutX="143.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖĞRETMEN BİLGİ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="48.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İSİM SOYİSİM :" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="101.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAİL : " AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="192.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFON : " AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="162.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="162.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_ogretmen_tel" layoutX="161.0" layoutY="161.0" AnchorPane.leftAnchor="160.0" />
+      <TextField fx:id="txt_ogretmen_mail" layoutX="161.0" layoutY="191.0" AnchorPane.leftAnchor="160.0" />
+      <Text layoutX="44.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADRES : " AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="txt_ogretmen_adres" layoutX="161.0" layoutY="228.0" prefHeight="109.0" prefWidth="200.0" AnchorPane.leftAnchor="160.0" />
+      <Button fx:id="btn_ogretmen_kaydet" layoutX="68.0" layoutY="382.0" mnemonicParsing="false" onAction="#Tiklandi_OgretmenKaydet" prefHeight="43.0" prefWidth="97.0" text="KAYDET" />
+      <Button fx:id="btn_ogretmen_guncelle" layoutX="261.0" layoutY="382.0" mnemonicParsing="false" onAction="#Tiklandi_OgretmenGuncelle" prefHeight="43.0" prefWidth="97.0" text="GÜNCELLE" />
+      <Text layoutX="46.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖĞRETMEN ID :" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_ogretmenId" layoutX="164.0" layoutY="66.0" AnchorPane.leftAnchor="160.0" />
+      <TextField fx:id="txt_ogretmen_sifre" layoutX="165.0" layoutY="130.0" AnchorPane.leftAnchor="160.0" />
+      <Text layoutX="44.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblStatus" layoutX="3.0" layoutY="446.0" prefHeight="43.0" prefWidth="461.0" text="LÜTFEN KAYIT YAPARKEN ID GİRMEYİNİZ..." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

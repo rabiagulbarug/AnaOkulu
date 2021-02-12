@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pan_yemeklistesi" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomasyon.YemekListesiController">
+   <children>
+      <Text fill="#9a0d8f" layoutX="30.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YEMEK LİSTESİ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tab_yemeklistesi" layoutX="23.0" layoutY="59.0" prefHeight="431.0" prefWidth="410.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="18.0">
+        <columns>
+            <TableColumn fx:id="tab_id" prefWidth="43.0" text="ID" />
+          <TableColumn fx:id="tab_gunler" prefWidth="164.0" text="HAFTANIN GÜNLERİ" />
+          <TableColumn fx:id="tab_yemek" prefWidth="200.0" text="YEMEK İSİMLERİ" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

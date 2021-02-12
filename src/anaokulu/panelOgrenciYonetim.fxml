@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pan_ogrencibilgi" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="530.0" stylesheets="@../../java/css/css1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomasyon.PanelOgrenciYonetimController">
+   <children>
+      <TextField fx:id="txt_ogrenci_isim" layoutX="165.0" layoutY="89.0" />
+      <Text layoutX="143.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖĞRENCİ BİLGİSİ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="48.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İSİM SOYİSİM" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="91.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="146.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VELİ BİLGİLERİ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="48.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BABA İSMİ" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="181.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="48.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ANNE İSMİ" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="151.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="48.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TC KİMLİK NO" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="121.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_tckimlik" layoutX="165.0" layoutY="119.0" />
+      <TextField fx:id="txt_anne_ismi" layoutX="165.0" layoutY="149.0" />
+      <TextField fx:id="txt_baba_ismi" layoutX="165.0" layoutY="179.0" />
+      <Text layoutX="51.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adres:" AnchorPane.bottomAnchor="133.486328125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="53.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baba telefon no" AnchorPane.bottomAnchor="163.486328125" AnchorPane.leftAnchor="53.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="53.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anne telefon no" AnchorPane.bottomAnchor="193.486328125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_baba_tel" layoutX="170.0" layoutY="312.0" />
+      <TextField fx:id="txt_anne_tel" layoutX="170.0" layoutY="282.0" />
+      <TextArea fx:id="txt_ogrenci_adres" layoutX="170.0" layoutY="345.0" prefHeight="65.0" prefWidth="200.0" />
+      <Text layoutX="44.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖĞRENCİ ID" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_ogrenciId" layoutX="165.0" layoutY="57.0" />
+      <Button fx:id="btn_ogrenci_guncelle" layoutX="390.0" layoutY="421.0" mnemonicParsing="false" onAction="#Tiklandi_OgrenciGuncelle" prefHeight="50.0" prefWidth="100.0" text="GÜNCELLE" />
+      <Button fx:id="btn_kaydet" layoutX="390.0" layoutY="348.0" mnemonicParsing="false" onAction="#Tiklandi_ButonKaydet" prefHeight="50.0" prefWidth="88.0" text="KAYDET" />
+      <Label fx:id="lblStatus" layoutX="11.0" layoutY="446.0" prefHeight="50.0" prefWidth="315.0" text="KAYIT YAPARKEN LÜTFEN &quot;ID&quot;  GİRMEYİNİZ...">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

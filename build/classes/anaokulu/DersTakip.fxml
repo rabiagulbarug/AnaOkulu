@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pan_derstakip" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomasyon.DersTakipController">
+   <children>
+      <TableView fx:id="tab_derstakip" layoutX="-163.0" layoutY="51.0" prefHeight="328.0" prefWidth="747.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="kln_saat" prefWidth="75.0" text="Saat" />
+          <TableColumn fx:id="kln_pazartesi" prefWidth="100.0" text="Pazartesi" />
+            <TableColumn fx:id="kln_sali" prefWidth="100.0" text="Sali" />
+            <TableColumn fx:id="kln_carsamba" prefWidth="100.0" text="Carsamba" />
+            <TableColumn fx:id="kln_persembe" prefWidth="100.0" text="Persembe" />
+            <TableColumn fx:id="kln_cuma" prefWidth="100.0" text="Cuma" />
+        </columns>
+      </TableView>
+      <Label layoutX="16.0" layoutY="15.0" prefHeight="42.0" prefWidth="160.0" text="DERS PROGRAMI :" textFill="#c61111">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_yenile" layoutX="416.0" layoutY="24.0" mnemonicParsing="false" onAction="#Tiklandi_YenileDersTakip" prefHeight="25.0" prefWidth="160.0" text="YENİLE" />
+   </children>
+</AnchorPane>

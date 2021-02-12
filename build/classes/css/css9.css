@@ -1,0 +1,357 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Ara 2020, 23:47:48
+    Author     : Secret
+*/
+ 
+#pan_odeme{
+    -fx-background-color:#FFE4E1; 
+}
+#pan_yemeklistesi{
+    -fx-background-color:darkgray;
+}
+#pan_yonetici{
+    -fx-background-color:darkgray;
+}#pan_ogretmen{
+    -fx-background-color:darkgray;
+}#pan_veli{
+    -fx-background-color:darkgray;
+}
+#pan_yoneticibilgi{
+    -fx-background-color:darkgray;    
+}
+#btn_odeme{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+}
+#tab_yemeklistesi{
+    -fx-background-color:oldlace;
+}
+
+#btn_ogretmen_yonetim{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+
+#btn_ders_takip{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+#btn_ogretmen_bilgi{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+#btn_ogrenci_bilgi{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+#btn_odeme{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+#btn_veli_bilgi{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+#btn_yemek_listesi{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+#btn_kayit{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+
+#btn_ders_programi{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+#btn_odeme_kontrol{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;   
+}
+#btn_ogretmen_yonetim{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+#btn_ogrenci_yonetim{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+
+#btn_veli_yonetim{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+
+}
+
+#btn_yonetici_kaydet{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: dotted;
+    -fx-border-width: 2px;
+    -fx-background-color: #ABEBC6;
+
+}
+#btn_yonetici_guncelle{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: dotted ;
+    -fx-border-width: 2px;
+    -fx-background-color: #ABEBC6;
+
+}
+#btn_yonetici_sil{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: dotted ;
+    -fx-border-width: 2px;
+    -fx-background-color: #ABEBC6;
+
+}
+#btn_ogrenci_guncelle{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+#btn_ogrenci_sil{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+
+#pan_ogrencibilgi{
+    -fx-background-color:darkgray;
+}
+
+#pan_yemek{
+    -fx-background-color:#FFE4E1;
+}
+
+#btn_ogretmen_kaydet{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+#btn_ogretmen_sil{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+#btn_ogretmen_guncelle{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+#pan_ogretmen1{
+    -fx-background-color:darkgray;
+
+}
+#pan_veli_bilgi{
+    -fx-background-color: darkgray;
+}
+#btn_veli_kaydet{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+#btn_veli_guncelle{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+
+}
+#btn_veli_sil{
+
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6; 
+}
+#btn_yemek{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:white; 
+}
+#btn_yenile{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:white; 
+}
+#btn_odeme_kaydet{
+    
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:white; 
+}
+#btn_sil{
+     -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:white; 
+}

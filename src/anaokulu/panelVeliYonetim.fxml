@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane fx:id="pan_veli_bilgi" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomasyon.PanelVeliYonetimController">
+   <children>
+      <TextField fx:id="txt_veli_isim" layoutX="165.0" layoutY="99.0" AnchorPane.topAnchor="96.0" />
+      <Text layoutX="143.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VELİ BİLGİ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İSİM SOYİSİM :" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="98.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAİL : " AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="220.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFON : " AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="160.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="163.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_veli_tel" layoutX="165.0" layoutY="158.0" AnchorPane.topAnchor="158.0" />
+      <TextField fx:id="txt_veli_mail" layoutX="164.0" layoutY="218.0" AnchorPane.topAnchor="218.0" />
+      <Text layoutX="50.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADRES : " AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="txt_veli_adres" layoutX="165.0" layoutY="259.0" prefHeight="109.0" prefWidth="200.0" />
+      <Button fx:id="btn_veli_kaydet" layoutX="50.0" layoutY="385.0" mnemonicParsing="false" onAction="#Tiklandi_VeliKaydet" prefHeight="50.0" prefWidth="134.0" text="KAYDET" />
+      <Button fx:id="btn_veli_guncelle" layoutX="265.0" layoutY="385.0" mnemonicParsing="false" onAction="#Tiklandi_VeliGuncelle" prefHeight="50.0" prefWidth="134.0" text="GÜNCELLLE" />
+      <Text layoutX="46.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VELİ ID :" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_veliId" layoutX="164.0" layoutY="66.0" AnchorPane.topAnchor="66.0" />
+      <Text layoutX="50.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFON 2 : " AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_veli_tel2" layoutX="164.0" layoutY="188.0" AnchorPane.topAnchor="188.0" />
+      <Text layoutX="50.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_veli_sifre" layoutX="164.0" layoutY="130.0" AnchorPane.topAnchor="127.0" />
+      <Label fx:id="lblStatus" layoutX="54.0" layoutY="458.0" prefHeight="44.0" prefWidth="449.0" text="LÜTFEN KAYIT YAPARKEN ID GİRMEYİNİZ..." AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

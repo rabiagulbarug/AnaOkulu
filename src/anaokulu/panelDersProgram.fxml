@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane fx:id="pan_dersprogram" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomasyon.PanelDersProgramController">
+   <children>
+      <Label layoutX="50.0" layoutY="75.0" text="ÖĞRETMEN ID" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="140.0" text="PAZARTESİ" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="180.0" text="SALI" AnchorPane.leftAnchor="51.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="220.0" text="ÇARŞAMBA" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="260.0" text="PERŞEMBE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="300.0" text="CUMA" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_ogretmenId" layoutX="160.0" layoutY="75.0" AnchorPane.leftAnchor="160.0" />
+      <TextField fx:id="txt_pazartesi" layoutX="160.0" layoutY="140.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="140.0" />
+      <TextField fx:id="txt_sali" layoutX="160.0" layoutY="180.0" AnchorPane.leftAnchor="160.0" />
+      <TextField fx:id="txt_carsamba" layoutX="160.0" layoutY="220.0" AnchorPane.leftAnchor="160.0" />
+      <TextField fx:id="txt_persembe" layoutX="160.0" layoutY="260.0" AnchorPane.leftAnchor="160.0" />
+      <TextField fx:id="txt_cuma" layoutX="160.0" layoutY="298.0" AnchorPane.leftAnchor="160.0" />
+      <Button fx:id="btn_ders_kaydet" layoutX="242.0" layoutY="359.0" mnemonicParsing="false" onAction="#Tiklandi_DersProgram_Kaydet" prefHeight="50.0" prefWidth="100.0" text="KAYDET" />
+      <Label layoutX="125.0" layoutY="25.0" text="DERS PROGRAMI " textFill="#261dcd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="106.0" text="SAAT" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_saat" layoutX="160.0" layoutY="106.0" />
+   </children>
+</AnchorPane>

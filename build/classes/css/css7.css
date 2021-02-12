@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Ara 2020, 22:55:16
+    Author     : Secret
+*/
+#pan_odeme_kontol{
+    -fx-background-color:#FFE4E1; 
+}
+
+#btn_odeme_guncelle{
+     -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ECFBFA;
+}

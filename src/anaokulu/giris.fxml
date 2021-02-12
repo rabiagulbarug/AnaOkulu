@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anc_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomasyon.GirisController">
+   <children>
+      <TextField fx:id="text_mail" layoutX="131.0" layoutY="79.0" />
+      <PasswordField fx:id="text_sifre" layoutX="131.0" layoutY="141.0" />
+      <Label fx:id="label_mail" layoutX="67.0" layoutY="79.0" prefHeight="25.0" prefWidth="51.0" text="MAİL : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_sifre" layoutX="64.0" layoutY="141.0" prefHeight="25.0" prefWidth="51.0" text="SİFRE :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="26.0" text="KULLANICI GİRİŞİ" textFill="#d00d0d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_giris" layoutX="226.0" layoutY="201.0" mnemonicParsing="false" onAction="#Login" prefHeight="59.0" prefWidth="108.0" text="GİRİŞ" />
+      <RadioButton fx:id="rad_ogretmen" layoutX="339.0" layoutY="104.0" mnemonicParsing="false" text="ÖĞRETMEN">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rad_veli" layoutX="339.0" layoutY="141.0" mnemonicParsing="false" text="VELİ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lblStatus" layoutX="296.0" layoutY="166.0" prefHeight="27.0" prefWidth="202.0" text="İşaretleme yapmayı unutmayınız." AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

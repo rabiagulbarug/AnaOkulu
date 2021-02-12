@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Ara 2020, 20:27:36
+    Author     : Secret
+*/
+#pan_veli_bilgi{
+    -fx-background-color:silver;
+}
+#btn_veli_kaydet{
+   
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+ 
+}
+#btn_veli_guncelle{
+   
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6;
+ 
+}
+#btn_veli_sil{
+   
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    -fx-background-color:#ABEBC6; 
+}
